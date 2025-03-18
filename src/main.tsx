@@ -1,10 +1,17 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter, Route, Routes } from "react-router";
+import HomePage from './pages/HomePage';
 import './index.css'
-import App from './App.tsx'
+import MainLayout from './layouts/MainLayout';
+import NotFoundPage from './pages/NotFoundPage';
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<HomePage />} />
+      </Route>
+      <Route path="*" element={<NotFoundPage />} />
+    </Routes>
+  </BrowserRouter>,
 )
