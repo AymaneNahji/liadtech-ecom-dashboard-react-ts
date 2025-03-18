@@ -1,4 +1,3 @@
-import React from 'react'
 import MainDrawer from '../components/layouts/MainDrawer'
 import { Outlet } from 'react-router'
 import MainHeader from '../components/layouts/MainHeader'

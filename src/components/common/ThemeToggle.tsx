@@ -1,4 +1,3 @@
-import React from 'react'
 import { LuSun ,LuMoon} from "react-icons/lu";
 import { useThemeStore } from '../../stores/themeStore';
 

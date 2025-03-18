@@ -1,4 +1,3 @@
-import React from 'react'
 import { RiMenuFold4Line } from 'react-icons/ri'
 import { LuSearch, LuSettings, LuMessageSquare, LuBell, LuScan } from "react-icons/lu";
 import { MdGridView } from "react-icons/md";
@@ -30,7 +29,7 @@ const MainHeader = () => {
                         </fieldset>
                         
                         <ThemeToggle />
-                        
+
                         {/* Notifications popup btn */}
                         <div className='rounded-full relative bg-slate-200 dark:bg-slate-600/50 p-2 cursor-pointer hover:bg-slate-400/50 dark:hover:bg-slate-900/50'>
                             <span className='absolute flex -top-1 -right-1'>
