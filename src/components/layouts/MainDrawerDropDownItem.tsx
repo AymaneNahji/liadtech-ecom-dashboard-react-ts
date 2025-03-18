@@ -33,7 +33,7 @@ const MainDrawerDropDownItem = (props :Props) => {
     <li className=" ">
         
         <span className="flex flex-nowrap gap-3.5 items-center pr-5 ">
-            <div className={`w-1 h-8 rounded-r-lg transition-all ${isOpen?'bg-blue-600':''}`}></div>
+            <div className={`w-1 h-8 rounded-r-lg transition ${isOpen?'bg-blue-600':''}`}></div>
             <div onClick={toggleOpening} className={`flex flex-1 flex-nowrap items-center gap-2 p-3.5 rounded-xl cursor-pointer ${isOpen?'bg-blue-900/25 !text-blue-600 [&>span]:!text-blue-600 ':''}`}>
                 <span className='dark:text-slate-400'>
                     {props.icon} 
@@ -45,7 +45,7 @@ const MainDrawerDropDownItem = (props :Props) => {
                 <IoIosArrowDown className={`transition ${isOpen?'rotate-180':''}`} />
             </div>
         </span>
-        <ul className={`list-[revert] pl-16 py-4 flex flex-col flex-nowrap gap-4 font-bold text-sm text-slate-600 dark:text-slate-400 transition-all ${isOpen?'':'max-h-0 !py-0 !my-0 opacity-0 overflow-hidden'}`}>
+        <ul className={`list-[revert] pl-16 py-4 flex flex-col flex-nowrap gap-4 font-bold text-sm text-slate-600 dark:text-slate-400 transition ${isOpen?'':'max-h-0 !py-0 !my-0 opacity-0 overflow-hidden'}`}>
             {props.items?.map((item,index)=>(
                 <NavLink key={index} to={item.path} className={({isActive})=>isActive?'text-blue-600':''}>
                     <li>
