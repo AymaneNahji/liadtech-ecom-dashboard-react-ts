@@ -8,7 +8,7 @@ import ThemeToggle from '../common/ThemeToggle';
 const MainHeader = () => {
     const drawerStore = useDrawerStore()
   return (
-    <div className='w-full h-20 flex gap-5 items-center px-5 bg-white dark:bg-slate-800 sticky top-0 dark:shadow shadow-gray-400/50'>
+    <div className='w-full h-20 flex gap-5 items-center px-5 bg-white dark:bg-slate-800 z-10 sticky top-0 dark:shadow shadow-gray-400/50'>
                     {
                         !drawerStore.isOpen && (
                             <>
