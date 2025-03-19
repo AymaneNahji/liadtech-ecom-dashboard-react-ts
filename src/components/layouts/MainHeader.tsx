@@ -16,7 +16,7 @@ const MainHeader = () => {
                                     <img id="logo_header" alt="" src="https://remosnextjs.vercel.app/images/logo/logo.png" className='inline dark:hidden' />
                                     <img id="logo_header" alt="" src="https://remosnextjs.vercel.app/images/logo/logo-dark.png" className='hidden dark:inline' />
                                 </a>
-                                <RiMenuFold4Line size={25} onClick={() => drawerStore.open()} className='text-blue-600 cursor-pointer' />
+                                <RiMenuFold4Line size={25} onClick={() => drawerStore.open()} className='dark:text-blue-400 text-blue-600 cursor-pointer' />
                             </>
                         )
                     }

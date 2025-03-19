@@ -13,9 +13,7 @@ const MainLayout = () => {
             <MainDrawer />
             <div className='overflow-auto relative flex-1'>
                 <MainHeader />
-                <div className='container mx-auto p-5'>
-                    <Outlet />
-                </div>
+                <Outlet />
             </div>
         </div>
     )

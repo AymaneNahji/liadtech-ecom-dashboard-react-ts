@@ -24,7 +24,7 @@ const MainDrawer = () => {
                     <div onClick={()=>drawerStore.close()} className='lg:hidden absolute inset-0 bg-black/50 z-50'></div>
                 )
             }
-            <div className={`h-screen flex flex-col flex-nowrap bg-white dark:bg-slate-800 dark:shadow shadow-black z-50 absolute  lg:static max-w-[19rem] ${drawerStore.isOpen ? 'w-full ' : '!px-0 !mx-0  !w-0 overflow-hidden transition-all'}`}>
+            <div className={`h-screen flex flex-col flex-nowrap bg-white dark:bg-slate-800 dark:shadow shadow-black z-50 absolute lg:static transition-transform transition-margin w-[19rem] ${drawerStore.isOpen ? ' -ml-0' : '-translate-x-full -ml-[19rem]'}`}>
                 <div className="flex h-20 flex-nowrap gap-2 justify-between items-center py-3.5 px-5 dark:shadow shadow-gray-400/30">
                     <a className='flex items-center gap-2 font-bold text-xl' href="/">
                         <img id="logo_header" alt="" src="https://remosnextjs.vercel.app/images/logo/logo.png" className='inline dark:hidden' />
